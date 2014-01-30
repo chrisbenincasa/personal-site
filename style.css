@@ -1,0 +1,89 @@
+@import url(reset.css);
+html, body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13pt;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  background-color: #f8f8f8;
+  color: #484848;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
+body {
+  border-top: 5px solid #666; }
+
+::selection {
+  background-color: #9a9a9a;
+  color: white; }
+
+h1 {
+  font-weight: normal;
+  margin: 0.5em 0; }
+
+.main-container {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 10px;
+  margin: 0 0 10px 30px; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  nav ul li {
+    display: inline-block; }
+
+p {
+  line-height: 17pt;
+  margin: 0.5em 0; }
+
+a {
+  color: black;
+  -webkit-transition: color 500ms ease;
+  -moz-transition: color 500ms ease;
+  -ms-transition: color 500ms ease;
+  -o-transition: color 500ms ease;
+  transition: color 500ms ease; }
+  a:hover {
+    color: #4059bf; }
+
+.column {
+  width: 210px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin-right: 15px; }
+  .column.no-margin {
+    margin: 0; }
+
+.stat {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  border: thin solid black;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: middle; }
+  .stat table td.right {
+    text-align: right; }
+  .stat .positive {
+    color: green; }
+  .stat .negative {
+    color: red; }
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+  /* portrait phones */ }
+/* #1- Large desktop */
+/* #3- Regular sized laptops */
+/* #3- Portrait tablet to landscape and desktop */
+/* #4- Landscape phone to portrait tablet */
+/* #5- Landscape phones and down */
+@media only screen and (max-width: 480px) {
+  .main-container {
+    width: 320px;
+    margin-left: 0; }
+
+  .column {
+    width: 100%; } }
