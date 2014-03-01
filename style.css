@@ -8,35 +8,48 @@ html, body {
   color: #484848;
   padding: 0;
   margin: 0;
-  width: 100%; }
+  width: 100%;
+}
 
 body {
-  border-top: 5px solid #666; }
+  border-top: 5px solid #666;
+}
 
 ::selection {
   background-color: #9a9a9a;
-  color: white; }
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
 
 h1 {
   font-weight: normal;
-  margin: 0.5em 0; }
+  margin: 0.5em 0;
+}
 
 .main-container {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   padding: 10px;
-  margin: 0 0 10px 30px; }
+  margin: 0 0 10px 30px;
+}
 
 nav ul {
   margin: 0;
   padding: 0;
-  list-style: none; }
-  nav ul li {
-    display: inline-block; }
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
 
 p {
   line-height: 17pt;
-  margin: 0.5em 0; }
+  margin: 0.5em 0;
+}
 
 a {
   color: black;
@@ -44,34 +57,97 @@ a {
   -moz-transition: color 500ms ease;
   -ms-transition: color 500ms ease;
   -o-transition: color 500ms ease;
-  transition: color 500ms ease; }
-  a:hover {
-    color: #4059bf; }
+  transition: color 500ms ease;
+}
 
-.column {
-  width: 210px;
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  vertical-align: top;
-  margin-right: 15px; }
-  .column.no-margin {
-    margin: 0; }
+a:hover {
+  color: #4059bf;
+}
 
-.stat {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+.row {
+  width: 100%;
+  position: relative;
+}
+
+.project {
+  padding: 0 0 0 10px;
+  border-left: 5px solid black;
   margin-bottom: 15px;
-  border: thin solid black;
-  padding: 10px;
+}
+
+.project span {
   display: inline-block;
-  vertical-align: middle; }
-  .stat table td.right {
-    text-align: right; }
-  .stat .positive {
-    color: green; }
-  .stat .negative {
-    color: red; }
+  vertical-align: middle;
+}
+
+.project-name {
+  font-size: 2em;
+  margin-right: 10px;
+}
+
+.project-name a {
+  text-decoration: none;
+}
+
+.project-language {
+  font-size: 1em;
+  margin-top: 10px;
+  color: #686868;
+}
+
+h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Language specific colors */
+.project.objective-c {
+  border-color: #438eff;
+}
+
+.project.objective-c a:hover {
+  color: #438eff;
+}
+
+.project.css {
+  border-color: #1f085e;
+}
+
+.project.css a:hover {
+  color: #1f085e;
+}
+
+.project.c {
+  border-color: #555;
+}
+
+.project.c a:hover {
+  color: #555;
+}
+
+.project.javascript {
+  border-color: #f15501;
+}
+
+.project.javascript a:hover {
+  color: #f15501;
+}
+
+.project.ruby {
+  border-color: #701516;
+}
+
+.project.ruby a:hover {
+  color: #701516;
+}
+
+.project.java {
+  border-color: #b07219;
+}
+
+.project.java a:hover {
+  color: #b07219;
+}
 
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   /* portrait phones */ }
@@ -83,7 +159,6 @@ a {
 @media only screen and (max-width: 480px) {
   .main-container {
     width: 320px;
-    margin-left: 0; }
-
-  .column {
-    width: 100%; } }
+    margin-left: 0;
+  }
+}
