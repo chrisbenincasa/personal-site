@@ -52,7 +52,9 @@
 
                         $currentTemplate.find('.project-description').text(repo.description);
 
-                        $currentTemplate.addClass(repo.language.toLowerCase());
+                        if (repo.language) {
+                            $currentTemplate.addClass(repo.language.toLowerCase());
+                        }
 
                         $container.append($currentTemplate.removeClass('hidden'));
                     }
