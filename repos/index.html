@@ -44,6 +44,10 @@
                         repo = data[i];
                         $currentTemplate = $template.clone();
 
+                        if (repo.fork) {
+                            return;
+                        }
+                        
                         $currentTemplate.find('.project-name a').
                             text(repo.name).
                             attr('href', repo.html_url);
