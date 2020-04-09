@@ -1,2 +1,2 @@
 #!/bin/bash
-aws --profile personal s3 sync --exclude "data/*" --exclude ".git*" --exclude "deploy" . s3://chrisbenincasa.com
+aws s3 sync --exclude "data/*" --exclude ".git*" --exclude "deploy" . s3://chrisbenincasa.com
